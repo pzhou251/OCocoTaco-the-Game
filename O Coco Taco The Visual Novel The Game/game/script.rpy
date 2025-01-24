@@ -1,7 +1,10 @@
 ﻿# The script of the game goes in this file.
 
+default persistent.pizzaFlag = 0
+define menuFlag = 0
 
 # The game starts here.
+
 
 label start:
 
@@ -28,6 +31,35 @@ label start:
     dj "You've created a new Ren'Py game.  crunch wrap supreme 😿"
 
     dj "Once you add a story, pictures, and music, you can release it to the world!"
+
+menu:
+    dj "Whatever, what do u want"
+
+    "Crunchywrapy supremy":
+        $ menuFlag = 0
+        turandot "yum i love crunchwrapy supremy (placeholder text)"
+
+    "Cheesy beans taquito":
+        $ menuFlag = 1
+        turandot "can you not spit on it this time"
+        dj "hmmm ill think about it"
+        wist "wait you spit on it??"
+        wist "i wanna speak to your manager *karen hair sprite*"
+
+    "Brazilian pizza":
+        $ menuFlag = 2
+        $ persistent.pizzaFlag += 1
+        jump pizza_choice
+
+label pizza_choice:
+
+
+label after_menu:
+
+
+
+     
+
 
     # This ends the game.
 
