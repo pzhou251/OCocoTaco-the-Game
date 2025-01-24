@@ -18,9 +18,13 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show turandot at left with dissolve
+    show turandot with dissolve
 
-    turandot "Hi! My name is Turandot"
+    wist "What da heck I just wanted to buy a crunchwrap supreme , I didn't want to play a dating sim :c"
+
+    show turandot shocked with hpunch
+    turandot "WAITTT"
+    
 
     
 
@@ -32,6 +36,7 @@ label start:
 
     dj "Once you add a story, pictures, and music, you can release it to the world!"
 
+label food_menu:
 menu:
     dj "Whatever, what do u want"
 
@@ -48,11 +53,25 @@ menu:
 
     "Brazilian pizza":
         $ menuFlag = 2
-        $ persistent.pizzaFlag += 1
+
+        
         jump pizza_choice
 
 label pizza_choice:
 
+# menu:
+#     "are you sure about this? ( this action will have consequences"
+    
+#     “Yes”:
+#         background and Turandot get darker / looks like night
+#          $ persistent.pizzaFlag += 1
+        # split second turandot sprite change
+        # Game closes 
+# Pizza Flag set
+#      “No”
+#       jump food_menu
+        # Goes back to menu
+        # music restarts
 
 label after_menu:
 
