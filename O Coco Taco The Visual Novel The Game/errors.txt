@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 63: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "are you sure about this? ( this action will have consequences"
-                                                                   ^
+File "game/script.rpy", line 64: expected menuitem
+    “Yes”:
+    ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Fri Jan 24 13:52:21 2025
+Fri Jan 24 14:11:44 2025

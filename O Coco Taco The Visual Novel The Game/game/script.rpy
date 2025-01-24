@@ -58,20 +58,19 @@ menu:
         jump pizza_choice
 
 label pizza_choice:
+menu:
+    dj "are you sure about this? ( this action will have consequences) "
+    "Yes":
+        #background and Turandot get darker / looks like night
+        $ persistent.pizzaFlag += 1
+        #split second turandot sprite change
+        #Game closes 
+        $ renpy.quit()
 
-# menu:
-#     "are you sure about this? ( this action will have consequences"
-    
-#     “Yes”:
-#         background and Turandot get darker / looks like night
-#          $ persistent.pizzaFlag += 1
-        # split second turandot sprite change
-        # Game closes 
-# Pizza Flag set
-#      “No”
-#       jump food_menu
-        # Goes back to menu
-        # music restarts
+    "No":
+        jump food_menu
+        #Goes back to menu
+        #music restarts
 
 label after_menu:
 
