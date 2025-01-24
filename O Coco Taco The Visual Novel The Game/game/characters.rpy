@@ -1,7 +1,5 @@
 # characters are defined here
 
-define eileen = Character("Eileen")
-define zeil = Character("Zeil")
+define dj = Character("DJ")
+define turandot = Character("Turandot")
 
-image zeil delighted = "zeil_delighted"
-image eileen happy = "eileen_happy"
