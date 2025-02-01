@@ -30,7 +30,7 @@ label start:
 
     # These display lines of dialogue.
 
-    show dj with moveinright
+    show dj neutral with moveinright
 
     dj "You've created a new Ren'Py game.  crunch wrap supreme 😿"
 
