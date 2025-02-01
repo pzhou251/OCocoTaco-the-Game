@@ -18,7 +18,7 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show turandot with dissolve
+    show turan neutral dissolve
 
     wist "What da heck I just wanted to buy a crunchwrap supreme , I didn't want to play a dating sim :c"
 
