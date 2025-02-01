@@ -2,14 +2,14 @@
 
 While running game code:
   File "game/script.rpy", line 21, in script
-    show turan_neutral dissolve
-Exception: Image 'turan_neutral' does not accept attributes 'dissolve'.
+    show turan neutral dissolve
+Exception: Image 'turan neutral' does not accept attributes 'dissolve'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "game/script.rpy", line 21, in script
-    show turan_neutral dissolve
+    show turan neutral dissolve
   File "C:\Users\Karely\Desktop\renpy-8.3.2-sdk\renpy\ast.py", line 1111, in execute
     show_imspec(self.imspec, atl=getattr(self, "atl", None))
   File "C:\Users\Karely\Desktop\renpy-8.3.2-sdk\renpy\ast.py", line 1074, in show_imspec
@@ -22,9 +22,9 @@ Full traceback:
     args.extraneous()
   File "C:\Users\Karely\Desktop\renpy-8.3.2-sdk\renpy\display\displayable.py", line 109, in extraneous
     raise Exception("Image '{}' does not accept attributes '{}'.".format(
-Exception: Image 'turan_neutral' does not accept attributes 'dissolve'.
+Exception: Image 'turan neutral' does not accept attributes 'dissolve'.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.2.24090902
 O Coco Taco The Visual Novel The Game 1.0
-Fri Jan 31 20:39:17 2025
+Fri Jan 31 20:42:34 2025
