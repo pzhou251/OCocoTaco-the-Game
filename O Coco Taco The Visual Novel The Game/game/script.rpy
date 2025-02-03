@@ -24,12 +24,34 @@ label start:
 
     play sound shake
     show turan shocked with hpunch
-    turandot "WAITTT"
-    
+    turandot "WAITTT KITTY !!"
+    show turan sad
+    turandot "Don't go, lets eat take bell together 😭"
 
-    
+    wist "???"
+    wist "how did you know I was a cat? :c hmm..."
+    wist "Are you a player or an npc"
 
-    # These display lines of dialogue.
+    show turan neutral
+    turandot "Yeah."
+
+    wist "???"
+    wist "That doesnt answer my question"
+
+    show turan neutral
+    Turandot "Oh, I'm just stuck here. My name's Turandot."
+
+    wist "oh nice to meet you im wist : 3"
+    wist "..."
+    
+    show turan happy
+    turandot "..."
+
+    wist "Wait :/ what do u mean ur stuck here"
+
+    show turan thinking
+    play sound bruh
+    turandot " hmm have u ever watched Saber Art Online"
 
     show dj neutral at right
 
