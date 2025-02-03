@@ -22,6 +22,7 @@ label start:
 
     wist "What da heck I just wanted to buy a crunchwrap supreme , I didn't want to play a dating sim :c"
 
+    play sound shake
     show turan shocked with hpunch
     turandot "WAITTT"
     
@@ -30,7 +31,7 @@ label start:
 
     # These display lines of dialogue.
 
-    show dj neutral with moveinright
+    show dj neutral at right
 
     dj "You've created a new Ren'Py game.  crunch wrap supreme 😿"
 
