@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 26: Line is indented, but the preceding play sound statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    show turan shocked with hpunch
-    ^
+File "game/script.rpy", line 64: expected end of line
+    play sound taco beep
+                    ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Mon Feb  3 15:00:21 2025
+Mon Feb  3 15:46:18 2025

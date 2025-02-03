@@ -50,8 +50,19 @@ label start:
     wist "Wait :/ what do u mean ur stuck here"
 
     show turan thinking
+    turandot "hmm have u ever watched Saber Art Online"
     play sound bruh
-    turandot " hmm have u ever watched Saber Art Online"
+
+    wist ">:/ i want to log out…."
+
+    show turan shocked
+    turandot "Nooooo wait lets get some food , Wist ! We can get a crunchy wrapy supremi™"
+    
+    wist "(╯✧ ∇ ✧)╯ crunchywrapy supremy…"
+
+    #bmg transition
+    play sound tacochime
+    
 
     show dj neutral at right
 
