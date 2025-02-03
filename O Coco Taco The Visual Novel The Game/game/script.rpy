@@ -39,7 +39,7 @@ label start:
     wist "That doesnt answer my question"
 
     show turan neutral
-    Turandot "Oh, I'm just stuck here. My name's Turandot."
+    turandot "Oh, I'm just stuck here. My name's Turandot."
 
     wist "oh nice to meet you im wist : 3"
     wist "..."
