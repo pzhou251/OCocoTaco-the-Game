@@ -35,7 +35,7 @@ label start:
     show turan shocked with hpunch
     turandot "WAITTT KITTY !!"
     show turan sad
-    turandot "Don't go, lets eat take bell together 😭"
+    turandot "Don't go, lets eat tacos together 😭"
 
     wist "???"
     wist "how did you know I was a cat? :c hmm..."
@@ -84,7 +84,7 @@ label start:
     show turan happy
     turandot  "Let's go order."
 
-    #bgm dissolve
+    scene bg outsidecoco with fade
     play sound tacobeep
 
     show turan happy at center
