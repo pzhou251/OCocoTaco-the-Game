@@ -65,7 +65,7 @@ label start:
     
     narrator "Yeah we know fast food chains dont usually have door chimes when you enter its just to establish the setting ,,, gosh"
     
-    show Turan confused
+    show turan confused
     turandot "Why so sassy they probably weren't even thinking about that."
 
     wist "who are you talking to?? Whos they??0 ___0' "
