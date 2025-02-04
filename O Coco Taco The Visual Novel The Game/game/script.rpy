@@ -89,13 +89,25 @@ label start:
 
     show turan happy at center
     turandot "hiiiii :3"
-    show turan sad at left with move
+    show turan sad at quarter_left with move
 
-    show dj neutral at right
+    show dj neutral at quarter_right
 
     dj " *sigh* "
 
-    dj "Once you add a story, pictures, and music, you can release it to the world!"
+    wist "hello!"
+
+    dj "No animals allowed."
+
+    wist "?????? >:O"
+
+    show turan mad at quarter_left
+    turandot "They're not an animal they're a player !"
+
+    wist "*sweating* yeah…"
+
+    show dj angry
+    dj "Whatever, what do u want"
 
 label food_menu:
 menu:
