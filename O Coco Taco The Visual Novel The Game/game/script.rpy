@@ -1,7 +1,14 @@
 ﻿# The script of the game goes in this file.
 
-default persistent.pizzaFlag = 0
-define menuFlag = 0
+#flags
+#default persistent.pizzaFlag = 0
+#define menuFlag = 0
+
+#character positions
+transform quarter_left:
+    xalign .25 yalign 1.0
+transform quarter_right:
+    xalign .75 yalign 1.0
 
 # The game starts here.
 
@@ -17,6 +24,8 @@ label start:
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
+
+
 
     show turan neutral with dissolve
 
