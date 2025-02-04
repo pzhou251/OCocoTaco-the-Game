@@ -79,10 +79,12 @@ label start:
     play sound tacobeep
 
     show turan happy at center
+    turandot "hiiiii :3"
+    show turan sad at left with move
 
     show dj neutral at right
 
-    dj "You've created a new Ren'Py game.  crunch wrap supreme 😿"
+    dj " *sigh* "
 
     dj "Once you add a story, pictures, and music, you can release it to the world!"
 

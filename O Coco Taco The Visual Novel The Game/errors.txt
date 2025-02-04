@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 64: expected end of line
-    play sound taco beep
-                    ^
+File "game/script.rpy", line 84: expected 'simple_expression' not found.
+    with with moveinleft
+         ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Mon Feb  3 15:46:18 2025
+Mon Feb  3 19:46:50 2025
