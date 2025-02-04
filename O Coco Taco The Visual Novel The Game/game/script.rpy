@@ -50,20 +50,25 @@ label start:
     wist "Wait :/ what do u mean ur stuck here"
 
     show turan thinking
-    turandot "hmm have u ever watched Saber Art Online"
+    turandot "Hmm have u ever watched Saber Art Online."
     play sound bruh
 
     wist ">:/ i want to log out…."
 
     show turan shocked
-    turandot "Nooooo wait lets get some food , Wist ! We can get a crunchy wrapy supremi™"
+    turandot "Nooooo wait lets get some food , Wist ! We can get a crunchy wrapy supremi™."
     
     wist "(╯✧ ∇ ✧)╯ crunchywrapy supremy…"
 
     #bmg transition
     play sound tacochime
     
+    narrator "Yeah we know fast food chains dont usually have door chimes when you enter its just to establish the setting ,,, gosh"
+    
+    show Turan confused
+    turandot "Why so sassy they probably weren't even thinking about that."
 
+    wist "who are you talking to?? Whos they??0 ___0' "
     show dj neutral at right
 
     dj "You've created a new Ren'Py game.  crunch wrap supreme 😿"
