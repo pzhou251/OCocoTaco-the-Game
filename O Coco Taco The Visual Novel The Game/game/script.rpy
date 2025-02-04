@@ -69,6 +69,17 @@ label start:
     turandot "Why so sassy they probably weren't even thinking about that."
 
     wist "who are you talking to?? Whos they??0 ___0' "
+
+    show turan neutral
+    turandot "Don’t worry this game is , like , 5 min long so we dont have time delve into that."
+    show turan happy
+    turandot  "Let's go order."
+
+    #bgm dissolve
+    play sound tacobeep
+
+    show turan happy at center
+
     show dj neutral at right
 
     dj "You've created a new Ren'Py game.  crunch wrap supreme 😿"
