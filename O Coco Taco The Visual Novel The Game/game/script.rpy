@@ -25,9 +25,16 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
+    scene bg obby with pixellate
 
     scene bg outside with pixellate
     show turan neutral with dissolve
+    play sound boing
+    play sound oof
+
+    wist "Dang it, I quit >:c"
+
+    wist "Failed this obby again."
 
     wist "What da heck I just wanted to buy a crunchwrap supreme , I didn't want to play a dating sim :c"
 
