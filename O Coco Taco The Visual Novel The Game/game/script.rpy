@@ -26,7 +26,7 @@ label start:
     # directory.
 
 
-
+    scene bg outside with pixellate
     show turan neutral with dissolve
 
     wist "What da heck I just wanted to buy a crunchwrap supreme , I didn't want to play a dating sim :c"
@@ -69,7 +69,7 @@ label start:
     
     wist "(╯✧ ∇ ✧)╯ crunchywrapy supremy…"
 
-    #bmg transition
+    scene bg outsidecoco with pixellate
     play sound tacochime
     
     narrator "Yeah we know fast food chains dont usually have door chimes when you enter its just to establish the setting ,,, gosh"
@@ -84,10 +84,10 @@ label start:
     show turan happy
     turandot  "Let's go order."
 
-    scene bg outsidecoco with fade
+    scene bg insidecoco with pixellate
     play sound tacobeep
 
-    show turan happy at center
+    show turan happy at center with dissolve
     turandot "hiiiii :3"
     show turan sad at quarter_left with move
 
@@ -106,8 +106,8 @@ label start:
 
     wist "*sweating* yeah…"
 
-    show dj angry
-    dj "Whatever, what do u want"
+    show turan mad at left with move
+    show dj mad at center with move
 
 label food_menu:
 menu:

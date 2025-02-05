@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 84: expected 'simple_expression' not found.
-    with with moveinleft
-         ^
+File "game/script.rpy", line 109: end of line expected.
+    show turan mad with moveout left
+                                ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Mon Feb  3 19:46:50 2025
+Tue Feb  4 19:16:34 2025
