@@ -36,12 +36,22 @@ label start:
 
     wist "{i}Maybe I should play a new game.{/i}"
 
-    wist "hmm"
+    wist "hmm?"
+    play sound click
 
-    wist "What da heck I just wanted to buy a crunchwrap supreme , I didn't want to play a dating sim :c"
+    scene bg games with pixellate
+
+    play sound click
+    wist "huh? caca o taco"
+    
+    play sound click
 
     scene bg outside with pixellate
     show turan neutral with dissolve
+
+    wist "What da heck I just wanted to buy a crunchwrap supreme , I didn't want to play a dating sim :c"
+
+
     play sound shake
     show turan shocked with hpunch
     turandot "WAITTT KITTY !!"
