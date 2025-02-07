@@ -15,20 +15,10 @@ transform quarter_right:
 
 
 label start:
-    #if persistent.pizza_flag > 0 and game_started > 0:
     if (persistent.pizza_flag > 0) and (persistent.game_started > 0):
-        wist "should jump now"
         jump pizza_start
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-    #scene bg classroom with dissolve
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    # figure out how to deal with persistents when the user quits manually
     $ persistent.game_started = 1
 
     scene bg obby with pixellate
@@ -162,8 +152,9 @@ menu:
     dj "are you sure about this? ( this action will have consequences) "
     "Yes":
         #background and Turandot get darker / looks like night
-        dj "you have chosen pizza [persistent.pizza_flag] time(s)"
         $ persistent.pizza_flag += 1
+        dj "you have chosen pizza [persistent.pizza_flag] time(s)"
+
         #split second turandot sprite change
         #Game closes 
         $ renpy.quit()
@@ -190,7 +181,7 @@ label pizza_start:
 
 
 label after_menu:
-
+    #put all the dialogue after food menu here
 
 
      
