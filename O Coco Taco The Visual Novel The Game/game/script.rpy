@@ -1,8 +1,9 @@
 ﻿# The script of the game goes in this file.
 
 #flags
-#default persistent.pizzaFlag = 0
-#define menuFlag = 0
+default persistent.pizza_flag = 0
+define menuFlag = 0
+default persistent.game_started = 0
 
 #character positions
 transform quarter_left:
@@ -14,6 +15,10 @@ transform quarter_right:
 
 
 label start:
+    #if persistent.pizza_flag > 0 and game_started > 0:
+    if (persistent.pizza_flag > 0) and (persistent.game_started > 0):
+        wist "should jump now"
+        jump pizza_start
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
@@ -24,6 +29,7 @@ label start:
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
+    $ persistent.game_started = 1
 
     scene bg obby with pixellate
 
@@ -137,6 +143,7 @@ menu:
     "Crunchywrapy supremy":
         $ menuFlag = 0
         turandot "yum i love crunchwrapy supremy (placeholder text)"
+        jump after_menu
 
     "Cheesy beans taquito":
         $ menuFlag = 1
@@ -144,11 +151,10 @@ menu:
         dj "hmmm ill think about it"
         wist "wait you spit on it??"
         wist "i wanna speak to your manager *karen hair sprite*"
+        jump after_menu
 
     "Brazilian pizza":
         $ menuFlag = 2
-
-        
         jump pizza_choice
 
 label pizza_choice:
@@ -156,7 +162,8 @@ menu:
     dj "are you sure about this? ( this action will have consequences) "
     "Yes":
         #background and Turandot get darker / looks like night
-        $ persistent.pizzaFlag += 1
+        dj "you have chosen pizza [persistent.pizza_flag] time(s)"
+        $ persistent.pizza_flag += 1
         #split second turandot sprite change
         #Game closes 
         $ renpy.quit()
@@ -166,6 +173,22 @@ menu:
         #Goes back to menu
         #music restarts
 
+label pizza_start:
+    # The game reload , bgm play
+    show turan thinking at center with dissolve
+    turandot "phewww thank goshness you dindt have to see that" 
+    wist "??? why did my screen just black out just now?" 
+    turandot "ooo yeah i didnt want you to see what that Brazilian pizza would do to me" 
+    # background changes to eaten pizza with police tape spongebob style
+    wist "wait you did this? you logged me out of the game???"  
+    turandot "oh it wasn't me it was my code writers"
+    wist "excuse me o_O what kind of vn is this" 
+    #Dissolve restroom door
+    turandot "yeah they probably wanted to protect you from what that pizza was going to do to me"
+    wist "… o_e"
+    #Background dissolve back
+
+
 label after_menu:
 
 
@@ -174,5 +197,5 @@ label after_menu:
 
 
     # This ends the game.
-
+    $ persistent.game_started = 0 # game ended
     return

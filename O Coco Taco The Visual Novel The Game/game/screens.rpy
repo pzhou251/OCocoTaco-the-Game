@@ -139,7 +139,7 @@ style window:
     background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
 
 style namebox:
-    xpos gui.name_xpos
+    xpos 500
     xanchor gui.name_xalign
     xsize gui.namebox_width
     ypos gui.name_ypos

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 109: end of line expected.
-    show turan mad with moveout left
-                                ^
+File "game/script.rpy", line 5: invalid syntax
+    default persistent.pizza_flag = 0
+             ^
 
-Ren'Py Version: Ren'Py 8.3.2.24090902
-Tue Feb  4 19:16:34 2025
+Ren'Py Version: Ren'Py 8.2.1.24030407
+Fri Feb  7 14:05:57 2025
