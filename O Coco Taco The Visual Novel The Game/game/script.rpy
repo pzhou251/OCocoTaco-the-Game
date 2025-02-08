@@ -2,7 +2,7 @@
 
 #flags
 default persistent.pizza_flag = 0
-define menuFlag = 0
+default persistent.menu_flag = 0
 default persistent.game_started = 0
 
 #character positions
@@ -15,10 +15,13 @@ transform quarter_right:
 
 
 label start:
-    if (persistent.pizza_flag > 0) and (persistent.game_started > 0):
+    define config.window = None
+
+    if (persistent.pizza_flag > 0) and (persistent.game_started > 0) and (persistent.menu_flag == 2):
         jump pizza_start
 
     # figure out how to deal with persistents when the user quits manually
+    $ persistent.menu_flag = 0
     $ persistent.game_started = 1
 
     scene bg obby with pixellate
@@ -131,12 +134,12 @@ menu:
     dj "Whatever, what do u want"
 
     "Crunchywrapy supremy":
-        $ menuFlag = 0
+        $ persistent.menu_flag = 1
         turandot "yum i love crunchwrapy supremy (placeholder text)"
         jump after_menu
 
     "Cheesy beans taquito":
-        $ menuFlag = 1
+        $ persistent.menu_flag = 1
         turandot "can you not spit on it this time"
         dj "hmmm ill think about it"
         wist "wait you spit on it??"
@@ -144,7 +147,7 @@ menu:
         jump after_menu
 
     "Brazilian pizza":
-        $ menuFlag = 2
+        $ persistent.menu_flag = 2
         jump pizza_choice
 
 label pizza_choice:

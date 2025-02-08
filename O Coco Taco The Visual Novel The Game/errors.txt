@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 5: invalid syntax
-    default persistent.pizza_flag = 0
-             ^
+File "game/script.rpy", line 18: end of line expected.
+    hide config.window
+               ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Fri Feb  7 14:05:57 2025
+Fri Feb  7 18:30:21 2025
