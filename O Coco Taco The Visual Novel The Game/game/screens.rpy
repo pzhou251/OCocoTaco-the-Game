@@ -139,7 +139,7 @@ style window:
     background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
 
 style namebox:
-    xpos 500
+    xpos 230
     xanchor gui.name_xalign
     xsize gui.namebox_width
     ypos gui.name_ypos
@@ -156,9 +156,9 @@ style say_label:
 style say_dialogue:
     properties gui.text_properties("dialogue")
 
-    xpos 250
-    xsize gui.dialogue_width
-    ypos gui.dialogue_ypos
+    xpos 390
+    xsize 2000
+    ypos -196
 
     adjust_spacing False
 
