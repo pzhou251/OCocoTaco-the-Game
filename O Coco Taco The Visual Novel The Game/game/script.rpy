@@ -89,7 +89,7 @@ label start:
     
     wist "(╯✧ ∇ ✧)╯ crunchywrapy supremy…"
 
-    scene bg outsidecoco with pixellate
+    scene bg outsidecoco3 with pixellate
     play sound tacochime
     
     narrator "Yeah we know fast food chains dont usually have door chimes when you enter its just to establish the setting ,,, gosh"
@@ -154,11 +154,14 @@ label pizza_choice:
 menu:
     dj "are you sure about this? ( this action will have consequences) "
     "Yes":
-        #background and Turandot get darker / looks like night
-        $ persistent.pizza_flag += 1
+        play sound horror
+        scene bg cocoscary 
+        $ persistent.pizza_flag
         dj "you have chosen pizza [persistent.pizza_flag] time(s)"
 
-        #split second turandot sprite change
+        show turan scared
+        turandot "hey wait-"
+    
         #Game closes 
         $ renpy.quit()
 

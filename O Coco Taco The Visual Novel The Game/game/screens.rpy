@@ -156,7 +156,7 @@ style say_label:
 style say_dialogue:
     properties gui.text_properties("dialogue")
 
-    xpos 390
+    xpos 450
     xsize 2000
     ypos -196
 
