@@ -197,6 +197,26 @@ style input:
     xmaximum gui.dialogue_width
 
 
+
+## Roblox Game Menu Screen
+screen roblox_menu:
+    imagemap:
+        ground "bg games.png"
+        hover "bg games.png"
+
+        hotspot (780, 270, 1100, 1100) clicked Return("game_clicked")
+
+
+## Coco Food Menu Screen
+screen food_menu:
+    imagemap:
+        ground "cocomenu.png"
+        hover "cocomenu.png"
+
+        hotspot (460, 590, 600, 470) clicked Return("crunchy")
+        hotspot (1140, 510, 636, 600) clicked Return("cheesy")
+        hotspot (1828, 492, 639, 634) clicked Return("pizza")
+
 ## Choice screen ###############################################################
 ##
 ## This screen is used to display the in-game choices presented by the menu
@@ -229,6 +249,8 @@ style choice_button is default:
 
 style choice_button_text is default:
     properties gui.text_properties("choice_button")
+
+
 
 
 ## Quick Menu screen ###########################################################

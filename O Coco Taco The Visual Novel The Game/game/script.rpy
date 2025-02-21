@@ -39,9 +39,14 @@ label start:
     play sound click
 
     scene bg games with pixellate
+    $ result = "loop"
 
     play sound click
     wist "huh? caca o taco"
+
+    call screen roblox_menu
+    
+    # change bg so coco o taco game is highlighted in yellow
     
     play sound click
 
@@ -130,23 +135,22 @@ label start:
     show dj mad at center with move
 
 label food_menu:
-menu:
+    
     dj "Whatever, what do u want"
-
-    "Crunchywrapy supremy":
+    call screen food_menu
+    $ result = _return
+    if(result == "crunchy"):
         $ persistent.menu_flag = 1
         turandot "yum i love crunchwrapy supremy (placeholder text)"
         jump after_menu
-
-    "Cheesy beans taquito":
+    elif(result == "cheesy"):
         $ persistent.menu_flag = 1
         turandot "can you not spit on it this time"
         dj "hmmm ill think about it"
         wist "wait you spit on it??"
         wist "i wanna speak to your manager *karen hair sprite*"
         jump after_menu
-
-    "Brazilian pizza":
+    elif(result == "pizza"):
         $ persistent.menu_flag = 2
         jump pizza_choice
 
