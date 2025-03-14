@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 216: Indentation mismatch.
-
-File "game/script.rpy", line 145: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    dj "Whatever, what do u want"
-    ^
+File "game/screens.rpy", line 215: the focus_mask keyword argument was not given a value.
+    focus_mask=Displayable
+              ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Fri Feb 21 14:16:01 2025
+Fri Mar 14 15:46:13 2025

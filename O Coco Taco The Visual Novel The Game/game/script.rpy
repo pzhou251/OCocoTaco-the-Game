@@ -137,8 +137,10 @@ label start:
 label food_menu:
     
     dj "Whatever, what do u want"
+    show cocotaco_menu
     call screen food_menu
     $ result = _return
+    hide cocotaco_menu
     if(result == "crunchy"):
         $ persistent.menu_flag = 1
         turandot "yum i love crunchwrapy supremy (placeholder text)"

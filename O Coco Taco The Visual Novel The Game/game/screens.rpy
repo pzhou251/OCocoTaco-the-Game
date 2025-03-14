@@ -209,13 +209,27 @@ screen roblox_menu:
 
 ## Coco Food Menu Screen
 screen food_menu:
-    imagemap:
-        ground "cocomenu.png"
-        hover "cocomenu.png"
+    imagebutton:
+        xalign .160
+        yalign .364
+        focus_mask True
+        auto "crunchywrappy_%s.png" action [Return("crunchy")]
 
-        hotspot (460, 590, 600, 470) clicked Return("crunchy")
-        hotspot (1140, 510, 636, 600) clicked Return("cheesy")
-        hotspot (1828, 492, 639, 634) clicked Return("pizza")
+    imagebutton:
+        xalign .396
+        yalign .315
+        focus_mask True
+        auto "taquito_%s.png" action [Return("cheesy")]
+
+    imagebutton:
+        xalign .635
+        yalign .304
+        focus_mask True
+        auto "pizza_%s.png" action [Return("pizza")]
+         
+        # hotspot (460, 590, 600, 470) clicked Return("crunchy")
+        # hotspot (1140, 510, 636, 600) clicked Return("cheesy")
+        # hotspot (1828, 492, 639, 634) clicked Return("pizza")
 
 ## Choice screen ###############################################################
 ##
