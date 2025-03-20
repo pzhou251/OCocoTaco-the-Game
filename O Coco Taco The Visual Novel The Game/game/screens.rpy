@@ -200,32 +200,36 @@ style input:
 
 ## Roblox Game Menu Screen
 screen roblox_menu:
-    imagemap:
-        ground "bg games.png"
-        hover "bg games.png"
+    imagebutton:
+        xalign .271
+        yalign .167
+        focus_mask True
+        auto "game %s.png" action [Return("game_clicked")]
 
-        hotspot (780, 270, 1100, 1100) clicked Return("game_clicked")
+        #hotspot (780, 270, 1100, 1100) clicked Return("game_clicked")
 
 
 ## Coco Food Menu Screen
 screen food_menu:
     imagebutton:
-        xalign .160
-        yalign .364
-        focus_mask True
-        auto "crunchywrappy_%s.png" action [Return("crunchy")]
-
-    imagebutton:
-        xalign .396
+        xalign .400
         yalign .315
         focus_mask True
-        auto "taquito_%s.png" action [Return("cheesy")]
+        auto "taquito %s.png" action [Return("cheesy")]
+
+
+    imagebutton:
+        xalign .155
+        yalign .364
+        focus_mask True
+        auto "crunchywrappy %s.png" action [Return("crunchy")]
+
 
     imagebutton:
         xalign .635
-        yalign .304
+        yalign .307
         focus_mask True
-        auto "pizza_%s.png" action [Return("pizza")]
+        auto "pizza %s.png" action [Return("pizza")]
          
         # hotspot (460, 590, 600, 470) clicked Return("crunchy")
         # hotspot (1140, 510, 636, 600) clicked Return("cheesy")
