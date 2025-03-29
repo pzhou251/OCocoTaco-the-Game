@@ -15,6 +15,7 @@ transform quarter_right:
 
 
 label start:
+    play music normal volume 0.75 fadein 0.5
     define config.window = None
 
     if (persistent.pizza_flag > 0) and (persistent.game_started > 0) and (persistent.menu_flag == 2):
@@ -160,6 +161,7 @@ label pizza_choice:
 menu:
     dj "are you sure about this? ( this action will have consequences) "
     "Yes":
+        stop music
         play sound horror
         scene bg cocoscary 
         $ persistent.pizza_flag
@@ -178,6 +180,7 @@ menu:
 
 label pizza_start:
     # The game reload , bgm play
+    play music normalwrong fadein 0.5
     show turan thinking at center with dissolve
     turandot "phewww thank goshness you dindt have to see that" 
     wist "??? why did my screen just black out just now?" 
@@ -186,7 +189,7 @@ label pizza_start:
     wist "wait you did this? you logged me out of the game???"  
     turandot "oh it wasn't me it was my code writers"
     wist "excuse me o_O what kind of vn is this" 
-    
+
     scene bg coco bathroom with pixellate
     turandot "yeah they probably wanted to protect you from what that pizza was going to do to me"
     wist "… o_e"
