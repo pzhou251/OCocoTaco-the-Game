@@ -46,7 +46,7 @@ label start:
 
     call screen roblox_menu
     
-    # change bg so coco o taco game is highlighted in yellow
+
     
     play sound click
 
@@ -186,7 +186,8 @@ label pizza_start:
     wist "wait you did this? you logged me out of the game???"  
     turandot "oh it wasn't me it was my code writers"
     wist "excuse me o_O what kind of vn is this" 
-    #Dissolve restroom door
+    
+    scene bg coco bathroom with pixellate
     turandot "yeah they probably wanted to protect you from what that pizza was going to do to me"
     wist "… o_e"
     #Background dissolve back
