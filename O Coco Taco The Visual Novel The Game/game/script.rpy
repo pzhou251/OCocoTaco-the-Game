@@ -15,7 +15,7 @@ transform quarter_right:
 
 
 label start:
-    play music normal volume 0.75 fadein 0.5
+    play music normal volume 0.5 fadein 0.5
     define config.window = None
 
     if (persistent.pizza_flag > 0) and (persistent.game_started > 0) and (persistent.menu_flag == 2):

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 183: expected end of line
-    play music normal wrong fadein 0.5
-                      ^
+File "game/options.rpy", line 67: invalid character '“' (U+201C)
+    “menu”
+     ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Sat Mar 29 16:16:38 2025
+Wed Apr  2 15:41:50 2025
