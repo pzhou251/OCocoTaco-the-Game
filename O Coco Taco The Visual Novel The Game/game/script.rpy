@@ -144,7 +144,8 @@ label food_menu:
     hide cocotaco_menu
     if(result == "crunchy"):
         $ persistent.menu_flag = 1
-        turandot "yum i love crunchwrapy supremy (placeholder text)"
+        show turan happy at quarter_left
+        turandot "yum i love crunchwrapy supremy"
         jump after_menu
     elif(result == "cheesy"):
         $ persistent.menu_flag = 1
@@ -184,7 +185,7 @@ label pizza_start:
     show turan thinking at center with dissolve
     turandot "phewww thank goshness you dindt have to see that" 
     wist "??? why did my screen just black out just now?" 
-    turandot "ooo yeah i didnt want you to see what that Brazilian pizza would do to me" 
+    turandot "ooo yeah i didn't want you to see what that Brazilian pizza would do to me" 
     # background changes to eaten pizza with police tape spongebob style
     wist "wait you did this? you logged me out of the game???"  
     turandot "oh it wasn't me it was my code writers"
@@ -193,6 +194,8 @@ label pizza_start:
     scene bg coco bathroom with pixellate
     turandot "yeah they probably wanted to protect you from what that pizza was going to do to me"
     wist "… o_e"
+    
+
     #Background dissolve back
 
 
