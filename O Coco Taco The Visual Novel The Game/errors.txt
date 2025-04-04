@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 342: 'True' is not a keyword argument or valid child of the vbox statement.
-    True action Start()
-        ^
+File "game/screens.rpy", line 460: the xpos keyword argument was not given a value.
+    imagebutton idle "sillydog.png" xpos=0.5 ypos=0.45 action Hide("hi", transition=pixellate)
+                                        ^
 
-Ren'Py Version: Ren'Py 8.3.2.24090902
-Wed Apr  2 21:57:35 2025
+Ren'Py Version: Ren'Py 8.2.1.24030407
+Fri Apr  4 03:14:13 2025

@@ -165,7 +165,7 @@ menu:
         stop music
         play sound horror
         scene bg cocoscary 
-        $ persistent.pizza_flag
+        $ persistent.pizza_flag += 1
         dj "you have chosen pizza [persistent.pizza_flag] time(s)"
 
         show turan scared

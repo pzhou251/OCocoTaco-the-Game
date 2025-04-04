@@ -1,28 +1,48 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/options.rpy", line 67, in script
-    define config.main_menu_music = menutheme.wav
-  File "game/options.rpy", line 67, in <module>
-    define config.main_menu_music = menutheme.wav
-NameError: name 'menutheme' is not defined
+After initialization, but before game start.
+  File "game/screens.rpy", line 459, in prepare_screen
+    screen hi():
+  File "game/screens.rpy", line 459, in prepare
+    screen hi():
+  File "game/screens.rpy", line 460, in prepare
+    imagebutton idle "sillydog.png" xpos 0.4 ypos 0.3 action [Play("sound", "audio/oof.mp3") Hide("hi", transition=moveoutright) ]
+  File "game/screens.rpy", line 460, in prepare
+    imagebutton idle "sillydog.png" xpos 0.4 ypos 0.3 action [Play("sound", "audio/oof.mp3") Hide("hi", transition=moveoutright) ]
+SyntaxError: invalid syntax (screens.rpy, line 460)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/options.rpy", line 67, in script
-    define config.main_menu_music = menutheme.wav
-  File "C:\Users\Karely\Desktop\renpy-8.3.2-sdk\renpy\ast.py", line 2235, in execute
-    self.set()
-  File "C:\Users\Karely\Desktop\renpy-8.3.2-sdk\renpy\ast.py", line 2249, in set
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "C:\Users\Karely\Desktop\renpy-8.3.2-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/options.rpy", line 67, in <module>
-    define config.main_menu_music = menutheme.wav
-NameError: name 'menutheme' is not defined
+  File "/Applications/renpy-8.1.3-sdk/renpy/bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "/Applications/renpy-8.1.3-sdk/renpy/main.py", line 635, in main
+    run(restart)
+  File "/Applications/renpy-8.1.3-sdk/renpy/main.py", line 94, in run
+    renpy.display.screen.prepare_screens()
+  File "/Applications/renpy-8.1.3-sdk/renpy/display/screen.py", line 1026, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/screens.rpy", line 459, in prepare_screen
+    screen hi():
+  File "game/screens.rpy", line 459, in prepare
+    screen hi():
+  File "game/screens.rpy", line 460, in prepare
+    imagebutton idle "sillydog.png" xpos 0.4 ypos 0.3 action [Play("sound", "audio/oof.mp3") Hide("hi", transition=moveoutright) ]
+  File "game/screens.rpy", line 460, in prepare
+    imagebutton idle "sillydog.png" xpos 0.4 ypos 0.3 action [Play("sound", "audio/oof.mp3") Hide("hi", transition=moveoutright) ]
+  File "/Applications/renpy-8.1.3-sdk/renpy/py3analysis.py", line 803, in ast_eval
+    return self.ast_eval_literal(expr)[0]
+  File "/Applications/renpy-8.1.3-sdk/renpy/py3analysis.py", line 785, in ast_eval_literal
+    expr = py_compile(expr, 'eval', ast_node=True)
+  File "/Applications/renpy-8.1.3-sdk/renpy/python.py", line 1144, in py_compile
+    raise e
+  File "/Applications/renpy-8.1.3-sdk/renpy/python.py", line 1081, in py_compile
+    raise orig_e
+  File "/Applications/renpy-8.1.3-sdk/renpy/python.py", line 1073, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (screens.rpy, line 460)
 
-Windows-10-10.0.26100 AMD64
-Ren'Py 8.3.2.24090902
+macOS-15.3.1-arm64-arm-64bit arm64
+Ren'Py 8.2.1.24030407
 O Coco Taco The Visual Novel The Game 1.0
-Wed Apr  2 15:45:10 2025
+Fri Apr  4 03:20:32 2025
