@@ -1,48 +1,64 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 After initialization, but before game start.
-  File "game/screens.rpy", line 459, in prepare_screen
-    screen hi():
-  File "game/screens.rpy", line 459, in prepare
-    screen hi():
-  File "game/screens.rpy", line 460, in prepare
-    imagebutton idle "sillydog.png" xpos 0.4 ypos 0.3 action [Play("sound", "audio/oof.mp3") Hide("hi", transition=moveoutright) ]
-  File "game/screens.rpy", line 460, in prepare
-    imagebutton idle "sillydog.png" xpos 0.4 ypos 0.3 action [Play("sound", "audio/oof.mp3") Hide("hi", transition=moveoutright) ]
-SyntaxError: invalid syntax (screens.rpy, line 460)
+  File "game/screens.rpy", line 328, in prepare_screen
+    screen navigation():
+  File "game/screens.rpy", line 328, in prepare
+    screen navigation():
+  File "game/screens.rpy", line 330, in prepare
+    fixed:
+  File "game/screens.rpy", line 330, in prepare
+    fixed:
+  File "game/screens.rpy", line 338, in prepare
+    if main_menu:
+  File "game/screens.rpy", line 338, in prepare
+    if main_menu:
+  File "game/screens.rpy", line 348, in prepare
+    imagebutton auto "images/menu hi %s.png" focus_mask True action [ Play("sound", "audio/click.mp3"), Show("hi", transition=moveinleft) ] hovered [ Play("sound", "audio/boing.mp3") ], Hide("hi", transition flip)
+  File "game/screens.rpy", line 348, in prepare
+    imagebutton auto "images/menu hi %s.png" focus_mask True action [ Play("sound", "audio/click.mp3"), Show("hi", transition=moveinleft) ] hovered [ Play("sound", "audio/boing.mp3") ], Hide("hi", transition flip)
+SyntaxError: invalid syntax (game/screens.rpy, line 348)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "/Applications/renpy-8.1.3-sdk/renpy/bootstrap.py", line 359, in bootstrap
+  File "C:\Users\Karely\Desktop\renpy-8.3.2-sdk\renpy\bootstrap.py", line 359, in bootstrap
     renpy.main.main()
-  File "/Applications/renpy-8.1.3-sdk/renpy/main.py", line 635, in main
+  File "C:\Users\Karely\Desktop\renpy-8.3.2-sdk\renpy\main.py", line 652, in main
     run(restart)
-  File "/Applications/renpy-8.1.3-sdk/renpy/main.py", line 94, in run
+  File "C:\Users\Karely\Desktop\renpy-8.3.2-sdk\renpy\main.py", line 94, in run
     renpy.display.screen.prepare_screens()
-  File "/Applications/renpy-8.1.3-sdk/renpy/display/screen.py", line 1026, in prepare_screens
+  File "C:\Users\Karely\Desktop\renpy-8.3.2-sdk\renpy\display\screen.py", line 1026, in prepare_screens
     s.ast.prepare_screen()
-  File "game/screens.rpy", line 459, in prepare_screen
-    screen hi():
-  File "game/screens.rpy", line 459, in prepare
-    screen hi():
-  File "game/screens.rpy", line 460, in prepare
-    imagebutton idle "sillydog.png" xpos 0.4 ypos 0.3 action [Play("sound", "audio/oof.mp3") Hide("hi", transition=moveoutright) ]
-  File "game/screens.rpy", line 460, in prepare
-    imagebutton idle "sillydog.png" xpos 0.4 ypos 0.3 action [Play("sound", "audio/oof.mp3") Hide("hi", transition=moveoutright) ]
-  File "/Applications/renpy-8.1.3-sdk/renpy/py3analysis.py", line 803, in ast_eval
+  File "game/screens.rpy", line 328, in prepare_screen
+    screen navigation():
+  File "game/screens.rpy", line 328, in prepare
+    screen navigation():
+  File "game/screens.rpy", line 330, in prepare
+    fixed:
+  File "game/screens.rpy", line 330, in prepare
+    fixed:
+  File "game/screens.rpy", line 338, in prepare
+    if main_menu:
+  File "game/screens.rpy", line 338, in prepare
+    if main_menu:
+  File "game/screens.rpy", line 348, in prepare
+    imagebutton auto "images/menu hi %s.png" focus_mask True action [ Play("sound", "audio/click.mp3"), Show("hi", transition=moveinleft) ] hovered [ Play("sound", "audio/boing.mp3") ], Hide("hi", transition flip)
+  File "game/screens.rpy", line 348, in prepare
+    imagebutton auto "images/menu hi %s.png" focus_mask True action [ Play("sound", "audio/click.mp3"), Show("hi", transition=moveinleft) ] hovered [ Play("sound", "audio/boing.mp3") ], Hide("hi", transition flip)
+  File "C:\Users\Karely\Desktop\renpy-8.3.2-sdk\renpy\py3analysis.py", line 803, in ast_eval
     return self.ast_eval_literal(expr)[0]
-  File "/Applications/renpy-8.1.3-sdk/renpy/py3analysis.py", line 785, in ast_eval_literal
+  File "C:\Users\Karely\Desktop\renpy-8.3.2-sdk\renpy\py3analysis.py", line 785, in ast_eval_literal
     expr = py_compile(expr, 'eval', ast_node=True)
-  File "/Applications/renpy-8.1.3-sdk/renpy/python.py", line 1144, in py_compile
+  File "C:\Users\Karely\Desktop\renpy-8.3.2-sdk\renpy\python.py", line 1144, in py_compile
     raise e
-  File "/Applications/renpy-8.1.3-sdk/renpy/python.py", line 1081, in py_compile
+  File "C:\Users\Karely\Desktop\renpy-8.3.2-sdk\renpy\python.py", line 1081, in py_compile
     raise orig_e
-  File "/Applications/renpy-8.1.3-sdk/renpy/python.py", line 1073, in py_compile
+  File "C:\Users\Karely\Desktop\renpy-8.3.2-sdk\renpy\python.py", line 1073, in py_compile
     tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
-SyntaxError: invalid syntax (screens.rpy, line 460)
+SyntaxError: invalid syntax (game/screens.rpy, line 348)
 
-macOS-15.3.1-arm64-arm-64bit arm64
-Ren'Py 8.2.1.24030407
+Windows-10-10.0.26100 AMD64
+Ren'Py 8.3.2.24090902
 O Coco Taco The Visual Novel The Game 1.0
-Fri Apr  4 03:20:32 2025
+Sat Apr  5 18:47:25 2025

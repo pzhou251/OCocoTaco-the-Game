@@ -345,7 +345,7 @@ screen navigation():
             #textbutton _("Preferences") action ShowMenu("preferences")
             imagebutton auto "images/menu settings %s.png" focus_mask True action [ Play("sound", "audio/click.mp3"), ShowMenu("preferences") ] hovered [ Play("sound", "audio/boing.mp3") ]
 
-            imagebutton auto "images/menu hi %s.png" focus_mask True action [ Play("sound", "audio/click.mp3"), Show("hi", transition=moveinleft) ] hovered [ Play("sound", "audio/boing.mp3") ]
+            imagebutton auto "images/menu hi %s.png" focus_mask True action [ Play("sound", "audio/click.mp3"), Show("hi", transition=moveinleft) ] hovered [ Play("sound", "audio/boing.mp3") ], Hide("hi", transition=dissolve)
         else:
             # fix nav bar
             textbutton _("History") action ShowMenu("history")
