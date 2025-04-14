@@ -158,7 +158,7 @@ style say_dialogue:
 
     xpos 450
     xsize 2000
-    ypos -196
+    ypos -202
 
     adjust_spacing False
 
