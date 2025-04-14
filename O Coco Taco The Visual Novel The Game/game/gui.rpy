@@ -66,7 +66,7 @@ define gui.name_text_font = "DejaVuSans.ttf"
 define gui.interface_text_font = "DejaVuSans.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 35
+define gui.text_size = 40
 
 ## The size of character names.
 define gui.name_text_size = 45
@@ -204,16 +204,17 @@ define gui.quick_button_text_selected_color = gui.accent_color
 ##
 ## Choice buttons are used in the in-game menus.
 
-define gui.choice_button_width = 1185
-define gui.choice_button_height = None
+define gui.choice_button_width = 900
+define gui.choice_button_height = 130
 define gui.choice_button_tile = False
 define gui.choice_button_borders = Borders(150, 8, 150, 8)
 define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xalign = 0.5
-define gui.choice_button_text_idle_color = '#888888'
-define gui.choice_button_text_hover_color = "#ffffff"
-define gui.choice_button_text_insensitive_color = '#8888887f'
+define gui.choice_button_text_yalign = 0.4
+define gui.choice_button_text_idle_color = '#e7e7e7'
+define gui.choice_button_text_hover_color = "#000000"
+define gui.choice_button_text_insensitive_color = '#ff00007f'
 
 
 ## File Slot Buttons ###########################################################
