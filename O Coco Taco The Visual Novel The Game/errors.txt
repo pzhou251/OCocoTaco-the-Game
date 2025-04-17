@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 348: keyword argument 'action' appears more than once in a imagebutton statement.
-    imagebutton auto "images/menu hi %s.png" focus_mask True action [ Play("sound", "audio/click.mp3"), Show("hi", transition=moveinleft) ] hovered [ Play("sound", "audio/boing.mp3") ], True action , Hide("hi")
-                                                                                                                                                                                                     ^
+File "game/screens.rpy", line 612: end of line expected.
+    use confirm.png(_("About"), scroll="viewport"):
+               ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Sat Apr  5 18:35:09 2025
+Wed Apr 16 20:17:04 2025

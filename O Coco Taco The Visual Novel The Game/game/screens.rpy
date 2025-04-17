@@ -158,7 +158,7 @@ style say_dialogue:
 
     xpos 450
     xsize 2000
-    ypos -202
+    ypos -20
 
     adjust_spacing False
 
@@ -479,7 +479,7 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
     if main_menu:
         add gui.main_menu_background
     else:
-        add gui.game_menu_background
+        add gui._background
 
     frame:
         style "game_menu_outer_frame"
@@ -560,7 +560,7 @@ style game_menu_outer_frame:
     bottom_padding 45
     top_padding 180
 
-    #background "gui/overlay/game_menu.png"
+    background "gui/overlay/game_menu.png"
 
 style game_menu_navigation_frame:
     xsize 420
@@ -590,9 +590,8 @@ style game_menu_label_text:
     yalign 0.5
 
 style return_button:
-    xpos gui.navigation_xpos
-    yalign 1.0
-    yoffset -45
+    xpos 2390
+    ysize 300
 
 
 ## About screen ################################################################
