@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 636: style property define is not known.
-    define gui.dialogue_width 1200
-          ^
+File "game/screens.rpy", line 929: style property vbox is not known.
+    vbox:
+        ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Sat Apr 19 19:57:07 2025
+Sat Apr 19 21:38:43 2025
