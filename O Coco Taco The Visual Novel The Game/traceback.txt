@@ -1,27 +1,41 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/screens.rpy", line 605, in execute
-    screen about():
-  File "game/screens.rpy", line 605, in execute
-    screen about():
-  File "game/screens.rpy", line 612, in execute
-    use confirm(_("About"), scroll="viewport"):
-TypeError: missing a required argument: 'yes_action'
+  File "game/screens.rpy", line 644, in execute
+    screen save():
+  File "game/screens.rpy", line 644, in execute
+    screen save():
+  File "game/screens.rpy", line 648, in execute
+    use file_slots(_("Save"))
+  File "game/screens.rpy", line 658, in execute
+    screen file_slots(title):
+  File "game/screens.rpy", line 658, in execute
+    screen file_slots(title):
+  File "game/screens.rpy", line 662, in execute
+    use game_menu(title):
+  File "game/screens.rpy", line 475, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+  File "game/screens.rpy", line 475, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+  File "game/screens.rpy", line 479, in execute
+    if main_menu:
+  File "game/screens.rpy", line 482, in execute
+    add gui._background
+  File "game/screens.rpy", line 482, in <module>
+    add gui._background
+AttributeError: 'StoreModule' object has no attribute '_background'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
-    python hide:
+  File "renpy/common/_layout/screen_load_save.rpym", line 35, in script
+    $ ui.interact()
   File "C:\Users\Karely\OneDrive\Desktop\renpy-8.3.2-sdk\renpy\ast.py", line 821, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "C:\Users\Karely\OneDrive\Desktop\renpy-8.3.2-sdk\renpy\python.py", line 1178, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
-    python hide:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
-    ui.interact()
+  File "renpy/common/_layout/screen_load_save.rpym", line 35, in <module>
+    $ ui.interact()
   File "C:\Users\Karely\OneDrive\Desktop\renpy-8.3.2-sdk\renpy\ui.py", line 301, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "C:\Users\Karely\OneDrive\Desktop\renpy-8.3.2-sdk\renpy\display\core.py", line 2215, in interact
@@ -43,17 +57,31 @@ Full traceback:
     self.update()
   File "C:\Users\Karely\OneDrive\Desktop\renpy-8.3.2-sdk\renpy\display\screen.py", line 697, in update
     self.screen.function(**self.scope)
-  File "game/screens.rpy", line 605, in execute
-    screen about():
-  File "game/screens.rpy", line 605, in execute
-    screen about():
-  File "game/screens.rpy", line 612, in execute
-    use confirm(_("About"), scroll="viewport"):
-  File "C:\Users\Karely\OneDrive\Desktop\renpy-8.3.2-sdk\renpy\parameter.py", line 307, in apply
-    raise TypeError(msg) # from None
-TypeError: missing a required argument: 'yes_action'
+  File "game/screens.rpy", line 644, in execute
+    screen save():
+  File "game/screens.rpy", line 644, in execute
+    screen save():
+  File "game/screens.rpy", line 648, in execute
+    use file_slots(_("Save"))
+  File "game/screens.rpy", line 658, in execute
+    screen file_slots(title):
+  File "game/screens.rpy", line 658, in execute
+    screen file_slots(title):
+  File "game/screens.rpy", line 662, in execute
+    use game_menu(title):
+  File "game/screens.rpy", line 475, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+  File "game/screens.rpy", line 475, in execute
+    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+  File "game/screens.rpy", line 479, in execute
+    if main_menu:
+  File "game/screens.rpy", line 482, in execute
+    add gui._background
+  File "game/screens.rpy", line 482, in <module>
+    add gui._background
+AttributeError: 'StoreModule' object has no attribute '_background'
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.2.24090902
 O Coco Taco The Visual Novel The Game 1.0
-Wed Apr 16 20:18:52 2025
+Thu Apr 17 21:20:45 2025

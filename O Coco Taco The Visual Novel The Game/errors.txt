@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 612: end of line expected.
-    use confirm.png(_("About"), scroll="viewport"):
-               ^
+File "game/screens.rpy", line 1585: '_' is not a keyword argument or valid child of the imagebutton statement.
+    imagebutton auto "images/setting button %s.png" _("Menu") action ShowMenu('preferences')
+                                                     ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Wed Apr 16 20:17:04 2025
+Thu Apr 17 20:00:37 2025

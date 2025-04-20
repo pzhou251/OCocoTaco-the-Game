@@ -28,14 +28,14 @@ define config.check_conflicting_properties = True
 define gui.accent_color = '#9933ff'
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = '#888888'
+define gui.idle_color = '#fdfdfd'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
 define gui.idle_small_color = '#aaaaaa'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#c184ff'
+define gui.hover_color = '#c993ff'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -72,13 +72,13 @@ define gui.text_size = 49
 define gui.name_text_size = 54
 
 ## The size of text in the game's user interface.
-define gui.interface_text_size = 45
+define gui.interface_text_size = 55
 
 ## The size of labels in the game's user interface.
-define gui.label_text_size = 36
+define gui.label_text_size = 50
 
 ## The size of text on the notify screen.
-define gui.notify_text_size = 24
+define gui.notify_text_size = 50
 
 ## The size of the game's title.
 define gui.title_text_size = 75
@@ -249,7 +249,7 @@ define gui.file_slot_rows = 2
 
 ## The position of the left side of the navigation buttons, relative to the left
 ## side of the screen.
-define gui.navigation_xpos = 60
+define gui.navigation_xpos = 10
 
 ## The vertical position of the skip indicator.
 define gui.skip_ypos = 15
@@ -319,7 +319,7 @@ define gui.scrollbar_tile = False
 define gui.slider_tile = False
 
 ## Horizontal borders.
-define gui.bar_borders = Borders(6, 6, 6, 6)
+define gui.bar_borders = Borders(4, 4, 4, 4)
 define gui.scrollbar_borders = Borders(6, 6, 6, 6)
 define gui.slider_borders = Borders(6, 6, 6, 6)
 
