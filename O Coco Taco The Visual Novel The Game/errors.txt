@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 1585: '_' is not a keyword argument or valid child of the imagebutton statement.
-    imagebutton auto "images/setting button %s.png" _("Menu") action ShowMenu('preferences')
-                                                     ^
+File "game/screens.rpy", line 636: style property define is not known.
+    define gui.dialogue_width 1200
+          ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Thu Apr 17 20:00:37 2025
+Sat Apr 19 19:57:07 2025

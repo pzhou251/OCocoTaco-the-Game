@@ -563,8 +563,8 @@ style game_menu_outer_frame:
     background "gui/overlay/game_menu.png"
 
 style game_menu_navigation_frame:
-    xsize 420
-    yfill True
+    xsize 600
+    yfill 1000
 
 style game_menu_content_frame:
     left_margin 60
@@ -581,16 +581,16 @@ style game_menu_side:
     spacing 15
 
 style game_menu_label:
-    xpos 75
-    ysize 180
+    xpos 250
+    ysize 280
 
 style game_menu_label_text:
-    size gui.title_text_size
+    size 90
     color gui.accent_color
     yalign 0.5
 
 style return_button:
-    xpos 2390
+    xpos 2370
     ysize 300
 
 
@@ -622,14 +622,18 @@ screen about():
                 text "[gui.about!t]\n"
 
             text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
-
+            
 
 style about_label is gui_label
 style about_label_text is gui_label_text
-style about_text is gui_text
+style about_text:
+    size 65
+    xpos 480
 
 style about_label_text:
-    size gui.label_text_size
+    size 80
+    xpos 520
+
 
 
 ## Load and Save screens #######################################################
@@ -891,14 +895,14 @@ style mute_all_button is check_button
 style mute_all_button_text is check_button_text
 
 style pref_label:
-    top_margin gui.pref_spacing
-    bottom_margin 3
+    top_margin 15
+    bottom_margin 20
 
 style pref_label_text:
-    yalign 1.0
+    yalign 1000
 
 style pref_vbox:
-    xsize 338
+    xsize 100
 
 style radio_vbox:
     spacing gui.pref_button_spacing
@@ -925,14 +929,13 @@ style slider_slider:
 
 style slider_button:
     properties gui.button_properties("slider_button")
-    yalign 0.5
-    left_margin 15
 
+    
 style slider_button_text:
     properties gui.text_properties("slider_button")
-
+    
 style slider_vbox:
-    xsize 675
+    xsize 600
 
 
 ## History screen ##############################################################
