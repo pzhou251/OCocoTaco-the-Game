@@ -3,6 +3,7 @@
 ################################################################################
 
 init offset = -1
+default buttons_visible = True
 
 
 ################################################################################
@@ -326,7 +327,6 @@ style quick_button_text:
 ## to other menus, and to start the game.
 
 screen navigation():
-
     fixed:
         style_prefix "navigation"
 
@@ -336,16 +336,16 @@ screen navigation():
         spacing gui.navigation_spacing
 
         if main_menu:
+            if buttons_visible:
+                #textbutton _("Start") action Start()
+                imagebutton auto "images/menu play %s.png" focus_mask True action [ Play("sound", "audio/click.mp3"), Start() ] hovered [ Play("sound", "audio/boing.mp3") ]
 
-            #textbutton _("Start") action Start()
-            imagebutton auto "images/menu play %s.png" focus_mask True action [ Play("sound", "audio/click.mp3"), Start() ] hovered [ Play("sound", "audio/boing.mp3") ]
+                imagebutton auto "images/menu about %s.png" focus_mask True action [ Play("sound", "audio/click.mp3"), SetVariable("buttons_visible", False), ShowMenu("about")] hovered [ Play("sound", "audio/boing.mp3") ]
 
-            imagebutton auto "images/menu about %s.png" focus_mask True action [ Play("sound", "audio/click.mp3"), ShowMenu("about") ] hovered [ Play("sound", "audio/boing.mp3") ]
+                #textbutton _("Preferences") action ShowMenu("preferences")
+                imagebutton auto "images/menu settings %s.png" focus_mask True action [ Play("sound", "audio/click.mp3"), SetVariable("buttons_visible", False), ShowMenu("preferences"),  ] hovered [ Play("sound", "audio/boing.mp3") ]
 
-            #textbutton _("Preferences") action ShowMenu("preferences")
-            imagebutton auto "images/menu settings %s.png" focus_mask True action [ Play("sound", "audio/click.mp3"), ShowMenu("preferences") ] hovered [ Play("sound", "audio/boing.mp3") ]
-
-            imagebutton auto "images/menu hi %s.png" focus_mask True action [ Play("sound", "audio/click.mp3"), Show("hi", transition=moveinleft) ] hovered [ Play("sound", "audio/boing.mp3") ], Hide("hi", transition=dissolve)
+                imagebutton auto "images/menu hi %s.png" focus_mask True action [ Play("sound", "audio/click.mp3"), Show("hi", transition=moveinleft) ] hovered [ Play("sound", "audio/boing.mp3") ], Hide("hi", transition=dissolve)
         else:
             # fix nav bar
             textbutton _("History") action ShowMenu("history")
@@ -535,7 +535,7 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
     textbutton _("Return"):
         style "return_button"
 
-        action Return()
+        action [Return(), SetVariable("buttons_visible", True)]
 
     label title
 
