@@ -327,6 +327,8 @@ style quick_button_text:
 ## to other menus, and to start the game.
 
 screen navigation():
+    zorder 0
+    modal False
     fixed:
         style_prefix "navigation"
 
@@ -345,7 +347,7 @@ screen navigation():
                 #textbutton _("Preferences") action ShowMenu("preferences")
                 imagebutton auto "images/menu settings %s.png" focus_mask True action [ Play("sound", "audio/click.mp3"), SetVariable("buttons_visible", False), ShowMenu("preferences"),  ] hovered [ Play("sound", "audio/boing.mp3") ]
 
-                imagebutton auto "images/menu hi %s.png" focus_mask True action [ Play("sound", "audio/click.mp3"), Show("hi", transition=moveinleft) ] hovered [ Play("sound", "audio/boing.mp3") ], Hide("hi", transition=dissolve)
+                imagebutton auto "images/menu hi %s.png" focus_mask True action [ Play("sound", "audio/click.mp3"), Show("hi", transition=moveinleft) ] hovered [ Play("sound", "audio/boing.mp3") ]
         else:
             # fix nav bar
             textbutton _("History") action ShowMenu("history")
@@ -460,7 +462,9 @@ style main_menu_version:
 ##
 
 screen hi():
-    imagebutton idle "sillydog.png" xpos 0.4 ypos 0.3 action [Play("sound", "audio/oof.mp3"), Hide("hi", transition=moveoutright) ] hovered [ Play("sound", "audio/bruh.mp3") ]
+    zorder 1
+    modal False
+    imagebutton idle "sillydog.png" xpos 0.4 ypos 0.3 action [Play("sound", "audio/oof.mp3"), Hide("hi", transition=moveoutright), Show("main_menu") ] hovered [ Play("sound", "audio/bruh.mp3") ]
 
 
 ## Game Menu screen ############################################################
@@ -563,7 +567,7 @@ style game_menu_outer_frame:
     background "gui/overlay/game_menu.png"
 
 style game_menu_navigation_frame:
-    xsize 600
+    xsize 140
     yfill 1000
 
 style game_menu_content_frame:
@@ -572,7 +576,7 @@ style game_menu_content_frame:
     top_margin 15
 
 style game_menu_viewport:
-    xsize 1380
+    xsize 2300
 
 style game_menu_vscrollbar:
     unscrollable gui.unscrollable
@@ -627,12 +631,14 @@ screen about():
 style about_label is gui_label
 style about_label_text is gui_label_text
 style about_text:
-    size 65
-    xpos 480
+    size 50
+    #xpos 480
+    xpos 50
 
 style about_label_text:
     size 80
-    xpos 520
+    #xpos 520
+    xpos 50
 
 
 

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 342: The if statement is not a valid child of the imagebutton statement.
-    imagebutton auto "images/menu play %s.png" focus_mask True action [ Play("sound", "audio/click.mp3"), Start() ] hovered [ Play("sound", "audio/boing.mp3") ] if buttons_visible
-                                                                                                                                                                   ^
+File "game/screens.rpy", line 467: 'zorder' is not a keyword argument or valid child of the imagebutton statement.
+    imagebutton idle "sillydog.png" xpos 0.4 ypos 0.3 zorder 1 action [Play("sound", "audio/oof.mp3"), Hide("hi", transition=moveoutright), Show("main_menu") ] hovered [ Play("sound", "audio/bruh.mp3") ]
+                                                            ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Sat May  3 19:41:58 2025
+Sat May  3 20:31:32 2025
