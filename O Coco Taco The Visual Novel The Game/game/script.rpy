@@ -15,6 +15,9 @@ transform quarter_right:
 
 
 label start:
+    $ _game_menu_screen = 'preferences'
+
+    show screen exit_button
     play music normal volume 0.5 fadein 0.5
     define config.window = None
 

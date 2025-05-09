@@ -1,0 +1,180 @@
+.DS_Store
+characters.rpy
+characters.rpyc
+gui.rpy
+gui.rpyc
+options.rpy
+options.rpyc
+screens.rpy
+screens.rpyc
+script.rpy
+script.rpyc
+cache/bytecode-39.rpyb
+cache/py3analysis.rpyb
+cache/screens.rpyb
+cache/shaders.txt
+images/.DS_Store
+images/Dj happy.PNG
+images/Dj mad.png
+images/Dj nervous.png
+images/Dj neutral.PNG
+images/Dj shock.png
+images/Turan confused.PNG
+images/Turan happy.PNG
+images/Turan mad.PNG
+images/Turan neutral.PNG
+images/Turan sad.PNG
+images/Turan scared.png
+images/Turan shocked.PNG
+images/Turan thinking.PNG
+images/bg coco bathroom.png
+images/bg cocoscary.png
+images/bg games.png
+images/bg insidecoco.png
+images/bg obby.png
+images/bg outside.png
+images/bg outsidecaco2.png
+images/bg outsidecoco.png
+images/bg outsidecoco3.png
+images/cocomenu.png
+images/cocotaco_menu.png
+images/crunchywrappy hover.png
+images/crunchywrappy idle.png
+images/desktop.ini
+images/game action.png
+images/game hover.png
+images/game idle.png
+images/menu about hover.png
+images/menu about idle.png
+images/menu hi hover.png
+images/menu hi idle.png
+images/menu play hover.png
+images/menu play idle.png
+images/menu settings hover.png
+images/menu settings idle.png
+images/pizza hover.png
+images/pizza idle.png
+images/sillydog.png
+images/taquito hover.png
+images/taquito idle.png
+images/textbox.png
+tl/.DS_Store
+tl/None/common.rpym
+tl/None/common.rpymc
+saves/_reload-1-LT1.save
+saves/_reload-2-LT1.save
+saves/auto-1-LT1.save
+saves/auto-10-LT1.save
+saves/auto-2-LT1.save
+saves/auto-3-LT1.save
+saves/auto-4-LT1.save
+saves/auto-5-LT1.save
+saves/auto-6-LT1.save
+saves/auto-7-LT1.save
+saves/auto-8-LT1.save
+saves/auto-9-LT1.save
+saves/navigation.json
+saves/persistent
+audio/boing.mp3
+audio/bruh.mp3
+audio/click old.mp3
+audio/click.mp3
+audio/desktop.ini
+audio/horror.mp3
+audio/menutheme.mp3
+audio/normal.mp3
+audio/normalwrong.wav
+audio/oof.mp3
+audio/shake.mp3
+audio/tacobeep.mp3
+audio/tacochime.mp3
+gui/bubble.png
+gui/desktop.ini
+gui/frame.png
+gui/game_menu.png
+gui/main_menu.png
+gui/namebox.png
+gui/notify.png
+gui/nvl.png
+gui/setting button hover.png
+gui/setting button idle.png
+gui/skip.png
+gui/textbox.png
+gui/textbox2.png
+gui/thoughtbubble.png
+gui/window_icon.png
+gui/slider/horizontal_hover_bar.png
+gui/slider/horizontal_hover_thumb.png
+gui/slider/horizontal_idle_bar.png
+gui/slider/horizontal_idle_thumb.png
+gui/slider/vertical_hover_bar.png
+gui/slider/vertical_hover_thumb.png
+gui/slider/vertical_idle_bar.png
+gui/slider/vertical_idle_thumb.png
+gui/button/check_foreground.png
+gui/button/check_selected_foreground.png
+gui/button/choice_hover_background.png
+gui/button/choice_idle_background.png
+gui/button/hover_background.png
+gui/button/idle_background.png
+gui/button/quick_hover_background.png
+gui/button/quick_idle_background.png
+gui/button/radio_foreground.png
+gui/button/radio_selected_foreground.png
+gui/button/slot_hover_background.png
+gui/button/slot_idle_background.png
+gui/phone/nvl.png
+gui/phone/textbox.png
+gui/phone/slider/horizontal_hover_bar.png
+gui/phone/slider/horizontal_hover_thumb.png
+gui/phone/slider/horizontal_idle_bar.png
+gui/phone/slider/horizontal_idle_thumb.png
+gui/phone/slider/vertical_hover_bar.png
+gui/phone/slider/vertical_hover_thumb.png
+gui/phone/slider/vertical_idle_bar.png
+gui/phone/slider/vertical_idle_thumb.png
+gui/phone/button/check_foreground.png
+gui/phone/button/check_selected_foreground.png
+gui/phone/button/choice_hover_background.png
+gui/phone/button/choice_idle_background.png
+gui/phone/button/hover_background.png
+gui/phone/button/idle_background.png
+gui/phone/button/radio_foreground.png
+gui/phone/button/radio_selected_foreground.png
+gui/phone/button/slot_hover_background.png
+gui/phone/button/slot_idle_background.png
+gui/phone/bar/bottom.png
+gui/phone/bar/left.png
+gui/phone/bar/right.png
+gui/phone/bar/top.png
+gui/phone/overlay/game_menu.png
+gui/phone/overlay/main_menu.png
+gui/phone/scrollbar/horizontal_hover_bar.png
+gui/phone/scrollbar/horizontal_hover_thumb.png
+gui/phone/scrollbar/horizontal_idle_bar.png
+gui/phone/scrollbar/horizontal_idle_thumb.png
+gui/phone/scrollbar/vertical_hover_bar.png
+gui/phone/scrollbar/vertical_hover_thumb.png
+gui/phone/scrollbar/vertical_idle_bar.png
+gui/phone/scrollbar/vertical_idle_thumb.png
+gui/bar/bottom.png
+gui/bar/left.png
+gui/bar/right.png
+gui/bar/top.png
+gui/overlay/confirm.png
+gui/overlay/game_menu.png
+gui/overlay/game_menu1.png
+gui/overlay/main_menu.png
+gui/scrollbar/horizontal_hover_bar.png
+gui/scrollbar/horizontal_hover_thumb.png
+gui/scrollbar/horizontal_idle_bar.png
+gui/scrollbar/horizontal_idle_thumb.png
+gui/scrollbar/vertical_hover_bar.png
+gui/scrollbar/vertical_hover_thumb.png
+gui/scrollbar/vertical_idle_bar.png
+gui/scrollbar/vertical_idle_thumb.png
+.vscode/settings.json
+fonts/SourceSansPro-Italic.ttf
+fonts/SourceSansPro-Regular.ttf
+fonts/SourceSansPro-Semibold.ttf
+fonts/gill-sans-ultra-bold.ttf

@@ -198,6 +198,12 @@ style input:
     xmaximum gui.dialogue_width
 
 
+## Exit Button Overlay Screen
+screen exit_button:
+    imagebutton:
+        focus_mask True
+        auto "./gui/setting button %s.png" action [ShowMenu('preferences')]
+
 
 ## Roblox Game Menu Screen
 screen roblox_menu:
@@ -348,13 +354,6 @@ screen navigation():
                 imagebutton auto "images/menu settings %s.png" focus_mask True action [ Play("sound", "audio/click.mp3"), SetVariable("buttons_visible", False), ShowMenu("preferences"),  ] hovered [ Play("sound", "audio/boing.mp3") ]
 
                 imagebutton auto "images/menu hi %s.png" focus_mask True action [ Play("sound", "audio/click.mp3"), Show("hi", transition=moveinleft) ] hovered [ Play("sound", "audio/boing.mp3") ]
-        else:
-            # fix nav bar
-            textbutton _("History") action ShowMenu("history")
-
-            textbutton _("Save") action ShowMenu("save")
-
-            textbutton _("Load") action ShowMenu("load")
 
         
 
@@ -362,9 +361,6 @@ screen navigation():
 
             textbutton _("End Replay") action EndReplay(confirm=True)
 
-        elif not main_menu:
-
-            textbutton _("Main Menu") action MainMenu()
 
 
         ## figure this out later !!!
@@ -482,8 +478,8 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
     if main_menu:
         add gui.main_menu_background
-    else:
-        add gui._background
+    # else:
+        # add gui.game_menu_background
 
     frame:
         style "game_menu_outer_frame"
@@ -802,7 +798,7 @@ screen preferences():
         vbox:
 
             hbox:
-                box_wrap True
+                box_wrap False
 
                 if renpy.variant("pc") or renpy.variant("web"):
 
@@ -815,8 +811,6 @@ screen preferences():
                 vbox:
                     style_prefix "check"
                     label _("Skip")
-                    textbutton _("Unseen Text") action Preference("skip", "toggle")
-                    textbutton _("After Choices") action Preference("after choices", "toggle")
                     textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
 
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
