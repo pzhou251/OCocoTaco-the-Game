@@ -256,7 +256,8 @@ label after_menu:
             wist "Well its kind of fun being with you , lets play another game !"
             show turan happy at center, bounce
             narrator "The cycle repeats"
+            scene bg main menu with fade
 
-    # This ends the game.
+    # This ends the game
     $ persistent.game_started = 0 # game ended
     return
