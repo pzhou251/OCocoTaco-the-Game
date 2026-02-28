@@ -11,6 +11,11 @@ transform quarter_left:
 transform quarter_right:
     xalign .75 yalign 1.0
 
+transform bounce:
+    yoffset 0
+    linear 0.2 yoffset -30
+    linear 0.2 yoffset 0
+
 # The game starts here.
 
 
@@ -148,6 +153,7 @@ label food_menu:
     if(result == "crunchy"):
         $ persistent.menu_flag = 1
         show turan happy at quarter_left
+        show dj mad at quarter_right
         turandot "yum i love crunchwrapy supremy"
         jump after_menu
     elif(result == "cheesy"):
@@ -155,7 +161,9 @@ label food_menu:
         turandot "can you not spit on it this time"
         dj "hmmm ill think about it"
         wist "wait you spit on it??"
-        wist "i wanna speak to your manager *karen hair sprite*"
+        wist "i wanna speak to your manager"
+        #karen hair sprite
+        dj "Allegedly... its just jokes."
         jump after_menu
     elif(result == "pizza"):
         $ persistent.menu_flag = 2
@@ -189,8 +197,7 @@ label pizza_start:
     turandot "phewww thank goshness you dindt have to see that" 
     wist "??? why did my screen just black out just now?" 
     turandot "ooo yeah i didn't want you to see what that Brazilian pizza would do to me" 
-    # background changes to eaten pizza with police tape spongebob style
-    wist "wait you did this? you logged me out of the game???"  
+    wist "wait you did that? you logged me out of the game???"  
     turandot "oh it wasn't me it was my code writers"
     wist "excuse me o_O what kind of vn is this" 
 
@@ -204,11 +211,51 @@ label pizza_start:
 
 
 label after_menu:
-    #put all the dialogue after food menu here
+    scene bg insidecoco with pixellate
+    play sound tacochime
+    show turan happy at center with dissolve
 
+    turandot "time to eattt"
+    wist "ok I’ll try a bite"
+    play sound nom
 
-     
+    wist "his doesn’t taste like anything. i dunno why i thought it would"
+    show turan neutral
+    turandot "do u like iy : 3"
+    wist "uhhh do u like it"
 
+    show turan thinking
+    turandot "hmm i like the wingstart more"
+    wist "whats with all the parody names? "
+    show turan thinking at center, bounce
+
+    turandot "so we dont get sued duhhh "
+    wist "Who’s we?? Actually who even are you really?"
+    
+    show turan neutral 
+    turandot "oh and me uhh Turandot the T at the end isnt pronounced 🙂"
+    show turan confused
+    turandot "we is you know… we"
+    wist "{i}There’s something… off about this place. And this guy. {/i}"
+    wist "{i}I think she's funny and I don’t want to leave her here all alone… what should I do?? {/i}"
+    menu:
+        "Who cares! Get the heck out of here":
+            wist "sorry but i got to gooo"
+            show turan shocked
+            turandot "no wait-"
+    menu:
+        narrator "do you want to log out?"
+        "yes":
+            stop music
+            play sound horror
+            scene bg cocoscary
+        "No":
+            wist "{i} i must keep eating... this food... {/i}"
+            show turan shocked
+            turandot "phewww thank goddess u didnt decide to leave, its gets really lonely here"
+            wist "Well its kind of fun being with you , lets play another game !"
+            show turan happy at center, bounce
+            narrator "The cycle repeats"
 
     # This ends the game.
     $ persistent.game_started = 0 # game ended

@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 205: expected statement.
-    action jump food_menu:
-                         ^
-
-File "game/script.rpy", line 206: expected statement.
-    action return
-           ^
+File "game/script.rpy", line 251: expected menuitem
+    $ persistent.game_started = 0 
+    ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Fri Feb 27 21:39:29 2026
+Fri Feb 27 22:41:07 2026
