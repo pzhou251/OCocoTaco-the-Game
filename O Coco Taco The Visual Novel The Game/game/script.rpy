@@ -198,8 +198,9 @@ label pizza_start:
     turandot "yeah they probably wanted to protect you from what that pizza was going to do to me"
     wist "… o_e"
     
+    #scene bg insidecoco with pixellate
 
-    #Background dissolve back
+
 
 
 label after_menu:

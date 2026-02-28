@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 481: screen expects a non-empty block.
-    else:
-         ^
+File "game/script.rpy", line 205: expected statement.
+    action jump food_menu:
+                         ^
 
-Ren'Py Version: Ren'Py 8.2.1.24030407
-Fri May  9 14:32:07 2025
+File "game/script.rpy", line 206: expected statement.
+    action return
+           ^
+
+Ren'Py Version: Ren'Py 8.3.2.24090902
+Fri Feb 27 21:39:29 2026
