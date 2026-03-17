@@ -204,6 +204,9 @@ label pizza_start:
     scene bg coco bathroom with pixellate
     turandot "yeah they probably wanted to protect you from what that pizza was going to do to me"
     wist "… o_e"
+    $ persistent.menu_flag = 0
+    stop music
+    play music normal volume 0.5 fadein 0.5
     
     #scene bg insidecoco with pixellate
 
