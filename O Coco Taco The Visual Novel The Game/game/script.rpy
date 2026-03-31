@@ -4,13 +4,15 @@
 default persistent.pizza_flag = 0
 default persistent.menu_flag = 0
 default persistent.game_started = 0
+default persistent.game_restart = 0
 
 #character positions
 transform quarter_left:
     xalign .25 yalign 1.0
 transform quarter_right:
     xalign .75 yalign 1.0
-
+transform center_center:
+    xalign .5 yalign .5
 transform bounce:
     yoffset 0
     linear 0.2 yoffset -30
@@ -101,9 +103,12 @@ label start:
     show turan shocked
     turandot "Nooooo wait lets get some food , Wist ! We can get a crunchy wrapy supremi™."
     
-    wist "(╯✧ ∇ ✧)╯ crunchywrapy supremy…"
+    wist "crunchywrapy supremy…"
 
-    scene bg outsidecoco3 with pixellate
+    if(persistent.game_restart == 1):
+        scene bg outsidecoco4 with pixellate
+    else:
+        scene bg outsidecoco3 with pixellate
     play sound tacochime
     
     narrator "Yeah we know fast food chains dont usually have door chimes when you enter its just to establish the setting ,,, gosh"
@@ -146,10 +151,35 @@ label start:
 label food_menu:
     
     dj "Whatever, what do u want"
-    show cocotaco_menu
-    call screen food_menu
-    $ result = _return
-    hide cocotaco_menu
+
+    if(persistent.pizza_flag >= 3):
+        if(persistent.game_restart == 1):
+            show cocomenu ugly with moveintop
+            play sound shake
+            pause 1.50
+            show cocomenu ugly
+            hide cocomenu ugly with moveouttop
+            play sound boing
+            show cocomenu soldout with moveinbottom
+        else:
+            show cocomenu soldout
+        call screen food_menu_outtapizza
+        $ result = _return
+        hide cocomenu soldout
+    else:
+        if(persistent.game_restart == 1):
+            show cocomenu ugly with moveintop
+            play sound shake
+            pause 1.5
+            hide cocomenu ugly with moveouttop
+            play sound boing
+            show cocomenu with moveinbottom
+
+        else:
+            show cocomenu 
+        call screen food_menu
+        $ result = _return
+        hide cocomenu
     if(result == "crunchy"):
         $ persistent.menu_flag = 1
         show turan happy at quarter_left
@@ -193,6 +223,8 @@ menu:
 label pizza_start:
     # The game reload , bgm play
     play music normalwrong fadein 0.5
+    if(persistent.pizza_flag == 3):
+        jump outta_pizza
     show turan thinking at center with dissolve
     turandot "phewww thank goshness you dindt have to see that" 
     wist "??? why did my screen just black out just now?" 
@@ -202,11 +234,22 @@ label pizza_start:
     wist "excuse me o_O what kind of vn is this" 
 
     scene bg coco bathroom with pixellate
+    show turan neutral at center with dissolve
     turandot "yeah they probably wanted to protect you from what that pizza was going to do to me"
     wist "… o_e"
+    if(persistent.pizza_flag == 1):
+        turandot "ufff I hope you don’t get the pizza again"
+        wist "again?"
+    elif(persistent.pizza_flag == 2):
+        show turan scared at center with dissolve
+        turandot "seriously. IM STUFFED"
+        pause 2.20
+    hide turan neutral with moveoutright
     $ persistent.menu_flag = 0
     stop music
+
     play music normal volume 0.5 fadein 0.5
+
     
     #scene bg insidecoco with pixellate
 
@@ -222,14 +265,14 @@ label after_menu:
     wist "ok I’ll try a bite"
     play sound nom
 
-    wist "his doesn’t taste like anything. i dunno why i thought it would"
+    wist "this doesn’t taste like anything. i dunno why i thought it would"
     show turan neutral
-    turandot "do u like iy : 3"
+    turandot "do u like it : 3"
     wist "uhhh do u like it"
 
     show turan thinking
     turandot "hmm i like the wingstart more"
-    wist "whats with all the parody names? "
+    wist "what's with all the parody names? "
     show turan thinking at center, bounce
 
     turandot "so we dont get sued duhhh "
@@ -252,6 +295,7 @@ label after_menu:
             stop music
             play sound horror
             scene bg cocoscary
+            jump game_end
         "No":
             wist "{i} i must keep eating... this food... {/i}"
             show turan shocked
@@ -260,7 +304,18 @@ label after_menu:
             show turan happy at center, bounce
             narrator "The cycle repeats"
             scene bg main menu with fade
+            $ persistent.game_restart = 1
+            jump game_end
 
+
+    label outta_pizza:
+        play music normalwrong fadein 0.5
+        show weouttapizza at center_center
+        $ persistent.menu_flag = 0
+        pause
+        
+
+    label game_end:
     # This ends the game
     $ persistent.game_started = 0 # game ended
     return

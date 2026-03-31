@@ -242,6 +242,21 @@ screen food_menu:
         # hotspot (1140, 510, 636, 600) clicked Return("cheesy")
         # hotspot (1828, 492, 639, 634) clicked Return("pizza")
 
+screen food_menu_outtapizza:
+    imagebutton:
+        xalign .400
+        yalign .315
+        focus_mask True
+        auto "taquito %s.png" action [Return("cheesy")]
+
+
+    imagebutton:
+        xalign .155
+        yalign .364
+        focus_mask True
+        auto "crunchywrappy %s.png" action [Return("crunchy")]
+
+
 ## Choice screen ###############################################################
 ##
 ## This screen is used to display the in-game choices presented by the menu

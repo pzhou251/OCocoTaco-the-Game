@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 259: end of line expected.
-    scene bg outside with fade 0.5
-                               ^
+File "game/script.rpy", line 160: end of line expected.
+    show cocomenu ugly, bounce
+                      ^
 
-Ren'Py Version: Ren'Py 8.3.2.24090902
-Fri Feb 27 23:10:33 2026
+Ren'Py Version: Ren'Py 8.5.2.26010301
+Tue Mar 31 03:15:08 2026
