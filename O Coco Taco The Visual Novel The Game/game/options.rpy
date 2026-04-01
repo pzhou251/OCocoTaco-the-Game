@@ -29,8 +29,13 @@ define config.version = "1.0"
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""
-""")
+define gui.about = _p(""" WELCOME TO COCO O TACO! COME IN AND TALK TO OUR WONDERFUL STAFF, ORDER FROM THE MENU, 
+
+AND GET THE MOST YUMMY FOODS IN ALL OF THE VIRTUAL WORLD. 
+
+ORDER 3 PIZZAS AND GET THE THIRD OF FREE ! GET READY FOR THE WORDERFUL WORLD OF BLOCKY FOOD. 
+
+;)""")
 
 
 ## A short name for the game used for executables and directories in the built

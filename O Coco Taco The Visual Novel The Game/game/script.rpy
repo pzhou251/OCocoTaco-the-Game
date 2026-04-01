@@ -249,9 +249,9 @@ label pizza_start:
     stop music
 
     play music normal volume 0.5 fadein 0.5
-
+    narrator "The cycle repeats"
     
-    #scene bg insidecoco with pixellate
+    jump game_end
 
 
 
@@ -309,6 +309,7 @@ label after_menu:
 
 
     label outta_pizza:
+        play sound horror
         play music normalwrong fadein 0.5
         show weouttapizza at center_center
         $ persistent.menu_flag = 0
