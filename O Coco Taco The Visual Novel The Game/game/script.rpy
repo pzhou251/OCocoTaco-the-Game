@@ -28,11 +28,6 @@ label start:
     play music normal volume 0.5 fadein 0.5
     define config.window = None
 
-    #debug
-    $ persistent.pizza_flag = 3
-    $ persistent.menu_flag = 2
-    $ persistent.game_started = 1
-
     if (persistent.pizza_flag > 0) and (persistent.game_started > 0) and (persistent.menu_flag == 2):
         jump pizza_start
 
@@ -314,13 +309,9 @@ label after_menu:
 
 
     label outta_pizza:
-        show weouttapizza at center_center
         play sound horror
-        # play sound horror_hit
-        # play sound metal_pipe
-        # play sound bang
         play music normalwrong fadein 0.5
-        
+        show weouttapizza at center_center
         $ persistent.menu_flag = 0
         pause
         
